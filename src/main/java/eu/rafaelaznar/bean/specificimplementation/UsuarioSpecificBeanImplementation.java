@@ -158,51 +158,51 @@ public class UsuarioSpecificBeanImplementation extends TableGenericBeanImplement
         this.obj_tipousuario = obj_tipousuario;
     }
 
-    @Override
-    public String getColumns() {
-        String strColumns = "";
-        strColumns += "id,";
-        strColumns += "dni,";
-        strColumns += "nombre,";
-        strColumns += "primer_apellido,";
-        strColumns += "segundo_apellido,";
-        strColumns += "password,";
-        strColumns += "login,";
-        strColumns += "email,";
-        strColumns += "fecha_nacimiento,";
-        strColumns += "id_tipousuario";
-        return strColumns;
-    }
-
-    @Override
-    public String getValues() {
-        String strColumns = "";
-        strColumns += id + ",";
-        strColumns += EncodingUtilHelper.quotate(dni) + ",";
-        strColumns += EncodingUtilHelper.quotate(nombre) + ",";
-        strColumns += EncodingUtilHelper.quotate(primer_apellido) + ",";
-        strColumns += EncodingUtilHelper.quotate(segundo_apellido) + ",";
-        strColumns += EncodingUtilHelper.quotate("da8ab09ab4889c6208116a675cad0b13e335943bd7fc418782d054b32fdfba04") + ", ";
-        strColumns += EncodingUtilHelper.quotate(login) + ",";
-        strColumns += EncodingUtilHelper.quotate(email) + ",";
-        strColumns += EncodingUtilHelper.stringifyAndQuotate(fecha_nacimiento) + ",";
-        strColumns += id_tipousuario;
-        return strColumns;
-    }
-
-    @Override
-    public String toPairs() {
-        String strPairs = "";
-        strPairs += "dni=" + EncodingUtilHelper.quotate(dni) + ",";
-        strPairs += "nombre=" + EncodingUtilHelper.quotate(nombre) + ",";
-        strPairs += "primer_apellido=" + EncodingUtilHelper.quotate(primer_apellido) + ",";
-        strPairs += "segundo_apellido=" + EncodingUtilHelper.quotate(segundo_apellido) + ",";
-        strPairs += "login=" + EncodingUtilHelper.quotate(login) + ",";
-        strPairs += "email=" + EncodingUtilHelper.quotate(email) + ",";
-        strPairs += "fecha_nacimiento=" + EncodingUtilHelper.stringifyAndQuotate(fecha_nacimiento) + ",";
-        strPairs += "id_tipousuario=" + id_tipousuario;
-        return strPairs;
-    }
+//    @Override
+//    public String getColumns() {
+//        String strColumns = "";
+//        strColumns += "id,";
+//        strColumns += "dni,";
+//        strColumns += "nombre,";
+//        strColumns += "primer_apellido,";
+//        strColumns += "segundo_apellido,";
+//        strColumns += "password,";
+//        strColumns += "login,";
+//        strColumns += "email,";
+//        strColumns += "fecha_nacimiento,";
+//        strColumns += "id_tipousuario";
+//        return strColumns;
+//    }
+//
+//    @Override
+//    public String getValues() {
+//        String strColumns = "";
+//        strColumns += id + ",";
+//        strColumns += EncodingUtilHelper.quotate(dni) + ",";
+//        strColumns += EncodingUtilHelper.quotate(nombre) + ",";
+//        strColumns += EncodingUtilHelper.quotate(primer_apellido) + ",";
+//        strColumns += EncodingUtilHelper.quotate(segundo_apellido) + ",";
+//        strColumns += EncodingUtilHelper.quotate("da8ab09ab4889c6208116a675cad0b13e335943bd7fc418782d054b32fdfba04") + ", ";
+//        strColumns += EncodingUtilHelper.quotate(login) + ",";
+//        strColumns += EncodingUtilHelper.quotate(email) + ",";
+//        strColumns += EncodingUtilHelper.stringifyAndQuotate(fecha_nacimiento) + ",";
+//        strColumns += id_tipousuario;
+//        return strColumns;
+//    }
+//
+//    @Override
+//    public String toPairs() {
+//        String strPairs = "";
+//        strPairs += "dni=" + EncodingUtilHelper.quotate(dni) + ",";
+//        strPairs += "nombre=" + EncodingUtilHelper.quotate(nombre) + ",";
+//        strPairs += "primer_apellido=" + EncodingUtilHelper.quotate(primer_apellido) + ",";
+//        strPairs += "segundo_apellido=" + EncodingUtilHelper.quotate(segundo_apellido) + ",";
+//        strPairs += "login=" + EncodingUtilHelper.quotate(login) + ",";
+//        strPairs += "email=" + EncodingUtilHelper.quotate(email) + ",";
+//        strPairs += "fecha_nacimiento=" + EncodingUtilHelper.stringifyAndQuotate(fecha_nacimiento) + ",";
+//        strPairs += "id_tipousuario=" + id_tipousuario;
+//        return strPairs;
+//    }
 
     @Override
     public GenericBeanInterface fill(ResultSet oResultSet, Connection oConnection, UsuarioSpecificBeanImplementation oPuserBean_security, Integer expand) throws SQLException, Exception {
